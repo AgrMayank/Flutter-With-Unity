@@ -48,7 +48,10 @@ public class Build : EditorWindow
 
         EditorUserBuildSettings.androidBuildSystem = AndroidBuildSystem.Gradle;
 
-        var options = BuildOptions.AcceptExternalModificationsToPlayer;
+        // var options = BuildOptions.AcceptExternalModificationsToPlayer;
+        var options = BuildOptions.AllowDebugging;
+        EditorUserBuildSettings.exportAsGoogleAndroidProject = true;
+
         var report = BuildPipeline.BuildPlayer(
             GetEnabledScenes(),
             apkPath,
@@ -80,10 +83,11 @@ public class Build : EditorWindow
         manifest_text = regex.Replace(manifest_text, "");
         File.WriteAllText(manifest_file, manifest_text);
 
-        if(isPlugin)
+        if (isPlugin)
         {
             SetupAndroidProjectForPlugin();
-        } else
+        }
+        else
         {
             SetupAndroidProject();
         }
@@ -129,7 +133,7 @@ public class Build : EditorWindow
 
     private void OnEnable()
     {
-      pluginMode = EditorPrefs.GetBool(persistentKey, false);
+        pluginMode = EditorPrefs.GetBool(persistentKey, false);
     }
 
     private static void BuildIOS(String path)
@@ -139,7 +143,9 @@ public class Build : EditorWindow
 
         EditorUserBuildSettings.iOSBuildConfigType = iOSBuildType.Release;
 
-        var options = BuildOptions.AcceptExternalModificationsToPlayer;
+        // var options = BuildOptions.AcceptExternalModificationsToPlayer;
+        var options = BuildOptions.AllowDebugging;
+
         var report = BuildPipeline.BuildPlayer(
             GetEnabledScenes(),
             path,
@@ -227,7 +233,8 @@ dependencies {
 }
 ";
             File.WriteAllText(app_build_path, app_build_script);
-        } else
+        }
+        else
         {
             if (!app_build_script.Contains(@"implementation project(':unityLibrary')"))
             {
@@ -304,7 +311,8 @@ project("":unityLibrary"").projectDir = file(""./unityLibrary"")
         string XCPROJECT_EXT = "/Unity-iPhone.xcodeproj";
 
         // check if we have a workspace or not
-        if (Directory.Exists(iosExportPluginPath + "/Unity-iPhone.xcworkspace")) {
+        if (Directory.Exists(iosExportPluginPath + "/Unity-iPhone.xcworkspace"))
+        {
             XCPROJECT_EXT = "/Unity-iPhone.xcworkspace";
         }
 
