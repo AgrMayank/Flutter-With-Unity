@@ -211,7 +211,7 @@ project.
 
 ![](./flutter_unity_widget%20_%20Flutter%20Package_files/libraries.png)
 
-### 3 (c) <ins>Setup AR Foundation</ins>
+### 3 (c) <ins>Setup AR Foundation</ins> (OPTIONAL)
 
 ![gif](./flutter_unity_widget%20_%20Flutter%20Package_files/ar-demo.gif)
 
