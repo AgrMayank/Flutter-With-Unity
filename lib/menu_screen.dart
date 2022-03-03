@@ -8,14 +8,14 @@ class MenuScreen extends StatefulWidget {
 }
 
 class _MenuScreenState extends State<MenuScreen> {
-  final String title = 'Open ARWAY SDK';
+  final String title = 'Open Unity';
   final String route = '/unity';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ARwayKit Flutter Demo'),
+        title: const Text('Unity Flutter Demo'),
       ),
       body: Center(
         child: Column(
@@ -26,7 +26,7 @@ class _MenuScreenState extends State<MenuScreen> {
             const Padding(
               padding: EdgeInsets.all(30),
               child: Text(
-                'Example scene to show how to link "ARWAY SDK" scenes with '
+                'Example scene to show how to link Unity scenes with '
                 'Flutter.',
                 style: TextStyle(
                   fontSize: 24,
@@ -40,15 +40,15 @@ class _MenuScreenState extends State<MenuScreen> {
               height: 96,
             ),
             Padding(
-              padding: EdgeInsets.all(30),
+              padding: const EdgeInsets.all(30),
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pushNamed(route);
                 },
                 style: ElevatedButton.styleFrom(
                   elevation: 10,
-                  primary: Color(0xFF1AB146),
-                  minimumSize: Size(192, 64),
+                  primary: const Color(0xFF1AB146),
+                  minimumSize: const Size(192, 64),
                 ),
                 child: Text(
                   title,

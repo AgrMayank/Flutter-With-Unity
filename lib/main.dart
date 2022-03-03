@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Flutter App',
+      title: 'Flutter + Unity',
       theme: ThemeData.dark(),
       initialRoute: '/',
       routes: {
