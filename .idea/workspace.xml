@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="82d4fa22-a7f0-41bc-a7b7-23569547e9d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutterwithunity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutterwithunity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menu_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menu_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unity/ARFoundationSamples/Assets/FlutterUnityIntegration/Editor/Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/unity/ARFoundationSamples/Assets/FlutterUnityIntegration/Editor/Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unity/ARFoundationSamples/Assets/XRI/Settings/XRInteractionEditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/unity/ARFoundationSamples/Assets/XRI/Settings/XRInteractionEditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unity/ARFoundationSamples/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/unity/ARFoundationSamples/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unity/ARFoundationSamples/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/unity/ARFoundationSamples/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
