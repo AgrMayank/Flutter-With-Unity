@@ -15,7 +15,7 @@ class _MenuScreenState extends State<MenuScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Unity Flutter Demo'),
+        title: const Text('Flutter + Unity'),
       ),
       body: Center(
         child: Column(
@@ -26,12 +26,11 @@ class _MenuScreenState extends State<MenuScreen> {
             const Padding(
               padding: EdgeInsets.all(30),
               child: Text(
-                'Example scene to show how to link Unity scenes with '
-                'Flutter.',
+                'Click the button below to open the added Unity scene inside Flutter.',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 20,
                   letterSpacing: 2,
-                  wordSpacing: 5,
+                  wordSpacing: 2,
                   fontStyle: FontStyle.italic,
                 ),
               ),
@@ -47,8 +46,8 @@ class _MenuScreenState extends State<MenuScreen> {
                 },
                 style: ElevatedButton.styleFrom(
                   elevation: 10,
-                  primary: const Color(0xFF1AB146),
-                  minimumSize: const Size(192, 64),
+                  primary: const Color(0xFFf7b900),
+                  minimumSize: const Size(256, 64),
                 ),
                 child: Text(
                   title,
