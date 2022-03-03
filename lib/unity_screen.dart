@@ -25,7 +25,7 @@ class _UnityScreenState extends State<UnityScreen> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('Inside Unity'),
       ),
       body: Card(
         margin: const EdgeInsets.all(0),
